@@ -1,16 +1,19 @@
 const express = require("express");
 const parser = require("body-parser");
+const path = require("path");
 const eventroute = require("./routes/eventroutes");
 const eventdata = require("./modals/eventmodal");
 require("./database");
 const app = express();
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 const port = process.env.port;
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 app.get("/all", (req, res) => {
   eventdata.find({}).then((r) => res.send(r));
 });
+console.log("path", process.env.NODE_ENV);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/build")));
   app.get("*", (req, res) => {
