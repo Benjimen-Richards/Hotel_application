@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "https://rhubarb-pudding-54831.herokuapp.com/",
+  "proxy": "https://apple-crumble-93807.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
