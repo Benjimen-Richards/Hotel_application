@@ -1,0 +1,75 @@
+.Home_container {
+  width: 100%;
+  min-height: 100vh;
+  max-height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //   border: 1px solid black;
+}
+.Nav_container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  & #outlined-basic {
+    width: 500px;
+  }
+  & .searchbar {
+    position: relative;
+    // border: 1px solid black;
+  }
+  & #submit_button {
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  & .SearchList {
+    position: absolute;
+    top: 80px;
+    // border: 1px solid black;
+    width: 500px;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+  }
+  & .cancelIcon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+}
+.Content {
+  //   border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  max-height: max-content;
+  & h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.card_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media all and (max-width: 500px) {
+  .Nav_container {
+    margin: 20px;
+    & #submit_button {
+      margin-top: 10px;
+    }
+    & #outlined-basic {
+      width: 370px;
+    }
+    & .SearchList {
+      top: 60px;
+    }
+  }
+}

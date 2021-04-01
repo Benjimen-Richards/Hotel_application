@@ -1,0 +1,24 @@
+.form_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Form_container {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  & #standard-basic {
+    width: 400px;
+  }
+  & .textfield {
+    margin: 10px;
+  }
+}
+#selectTag {
+  width: 400px;
+}
