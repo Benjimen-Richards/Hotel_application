@@ -1,4 +1,4 @@
-import "./Css/Homepage.scss";
+import "./Css/Homepage.css";
 import { List, ListItem, ListItemText } from "@material-ui/core";
 import { useEffect, useState } from "react";
 

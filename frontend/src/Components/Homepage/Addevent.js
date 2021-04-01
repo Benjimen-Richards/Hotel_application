@@ -6,7 +6,7 @@ import {
   TextField,
   CircularProgress,
 } from "@material-ui/core";
-import "./Css/Event.scss";
+import "./Css/Event.css";
 import { connect } from "react-redux";
 import { fetch_citydata, post_event } from "../../Redux/Actionfile";
 class Addevent extends Component {

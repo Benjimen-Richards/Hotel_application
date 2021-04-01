@@ -12,12 +12,12 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  & #standard-basic {
-    width: 400px;
-  }
-  & .textfield {
-    margin: 10px;
-  }
+}
+.textfield {
+  margin: 10px;
+}
+#standard-basic {
+  width: 400px;
 }
 #selectTag {
   width: 400px;
